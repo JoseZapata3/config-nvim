@@ -5,10 +5,8 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set number")
 
 vim.diagnostic.config({
-  virtual_text = {
-    spacing = 4,
-    prefix = '●', 
-  },
+  virtual_text = false,
+  virtual_lines = { only_current_line = true },
   severity_sort = true,
 })
 
