@@ -15,7 +15,7 @@ return {
 		},
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "ts_ls", "pylsp", "postgres_lsp", "elixirls" },
+				ensure_installed = { "lua_ls", "ts_ls", "pylsp", "postgres_lsp", "sqls", "elixirls" },
 			})
 		end,
 	},
@@ -35,10 +35,13 @@ return {
 					},
 				},
 			})
+
+
 			vim.lsp.enable("lua_ls")
 			vim.lsp.enable("ts_ls")
 			vim.lsp.enable("pylsp")
 			vim.lsp.enable("postgres_lsp")
+			vim.lsp.enable("sqls")
 			vim.lsp.enable("elixirls")
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})

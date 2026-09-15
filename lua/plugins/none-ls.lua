@@ -15,6 +15,12 @@ return {
 				require("none-ls.diagnostics.ruff"),
 				null_ls.builtins.formatting.mix,
 				null_ls.builtins.diagnostics.credo,
+				--null_ls.builtins.diagnostics.sqlfluff.with({
+				--	extra_args = { "--dialect", "postgres" },
+				--}),
+				--null_ls.builtins.formatting.sqlfluff.with({
+				--	extra_args = { "--dialect", "postgres" },
+				--}),
 			},
 		})
 
