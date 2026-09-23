@@ -10,6 +10,7 @@ return {
   config = function()
     --vim.keymap.set('n', '<C-o>', ':Neotree filesystem reveal left<CR>',{})
     vim.keymap.set("n", "<leader>e", "<Cmd>Neotree<CR>")
+    vim.keymap.set("n", "<leader>ec", "<Cmd>Neotree close<CR>")
     require("neo-tree").setup({
       close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
       popup_border_style = "NC", -- or "" to use 'winborder' on Neovim v0.11+
